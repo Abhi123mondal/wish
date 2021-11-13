@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>document</title>
+      <style>
+          body{
+              background-image: url("photo-1578922746465-3a80a228f223.jpg");
+          }
+        #main{
+              width: 700px;
+              height: 300px;
+              box-shadow:0 0 80px black;
+              padding: 20px;
+              margin: 20px auto;
+              text-align: center;
+              color:black;
+            background-color:skyblue;
+          }
+          #b1{
+              width: 50px;
+              height: 30px;
+             background-color: red; 
+             margin-top: 40px;
+             margin-left: 50px;
+             
+          }
+          #b2{
+              width: 50px;
+              height: 30px;
+              background-color: aqua;
+              margin-top: 40px;
+             margin-left: 70px;
+          }
+          #b3{
+              width: 50px;
+              height: 30px;
+              background-color: yellow;
+              margin-top: 40px;
+             margin-left: 70px;
+          }
+      </style>
+      <script>
+          function goodMn(){
+            var one =  document.getElementById('change');
+            one.innerText="GOOD MORNING";
+          }
+          function goodEv(){
+              var two = document.getElementById('change');
+              two.innerText="GOOD EVENING";
+          }
+          function goodNg(){
+              var three = document.getElementById('change');
+              three.innerText ="GOOD NIGHT";
+          }
+      </script>
+    </head>
+    <body>
+        <div id="main">
+            <h2 id="change">JISHAN ALI MONDAL</h2>
+                <button id="b1" onclick="goodMn()">GM</button>
+                <button id="b2" onclick="goodEv()">GE</button>
+                <button id="b3" onclick="goodNg()"> GN</button>
+
+        </div>
+    </body>
+</html>
